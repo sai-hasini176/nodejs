@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>Ticket Booking</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;      
+            height: 100vh;            
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        input, select {
+            width: 100%;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Ticket Booking</h2>
+
+        <form>
+            <label>Passenger Name:</label><br>
+            <input type="text" required><br><br>
+
+            <label>From:</label><br>
+            <input type="text" required><br><br>
+
+            <label>To:</label><br>
+            <input type="text" required><br><br>
+
+            <label>Date:</label><br>
+            <input type="date" required><br><br>
+
+            <label>Class:</label><br>
+            <select>
+                <option>Economy</option>
+                <option>Business</option>
+            </select><br><br>
+
+            <input type="submit" value="Book Ticket">
+        </form>
+    </div>
+
+</body>
+</html>
