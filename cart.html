@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EBook System</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        /* Navbar */
+        nav {
+            background-color: #222;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav h3 {
+            margin: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        /* Centered Container */
+        .container {
+            width: 60%;
+            margin: 50px auto;   /* This centers it */
+            background: white;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        /* Grand total */
+        .grand-total {
+            text-align: right;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <h3>E-Book Store</h3>
+    <div>
+        <a href="#">Catalog</a>
+        <a href="#">Cart</a>
+        <a href="#">Logout</a>
+    </div>
+</nav>
+<div class="container">
+    <h2>Your Cart</h2>
+    <table>
+        <tr>
+            <th>Book</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>FullStack Development</td>
+            <td>₹999</td>
+            <td>1</td>
+            <td>₹1004</td>
+        </tr>
+    </table>
+    <h3 class="grand-total">Grand Total: ₹450</h3>
+</div>
+</body>
+</html>
