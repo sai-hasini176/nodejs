@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Calculator</title>
+<script>
+function validation(){
+    let num1 = document.getElementById("number1").value;
+    let num2 = document.getElementById("number2").value;
+    if(isNaN(num1) || isNaN(num2)){
+        document.getElementById("res_id").innerHTML="Enter valid numbers";
+        return false;
+    }
+    return true;
+}
+function add(){
+    if(validation()){
+        let n1 = Number(document.getElementById("number1").value);
+        let n2 = Number(document.getElementById("number2").value);
+        document.getElementById("res_id").innerHTML="Result : "+(n1+n2);
+    }
+}
+function sub(){
+    if(validation()){
+        let n1 = Number(document.getElementById("number1").value);
+        let n2 = Number(document.getElementById("number2").value);
+        document.getElementById("res_id").innerHTML="Result : "+(n1-n2);
+    }
+}
+function mul(){
+    if(validation()){
+        let n1 = Number(document.getElementById("number1").value);
+        let n2 = Number(document.getElementById("number2").value);
+        document.getElementById("res_id").innerHTML="Result : "+(n1*n2);
+    }
+}
+function div(){
+    if(validation()){
+        let n1 = Number(document.getElementById("number1").value);
+        let n2 = Number(document.getElementById("number2").value);
+        if(n2==0){
+            document.getElementById("res_id").innerHTML="Cannot divide by zero";
+        }
+        else{
+            document.getElementById("res_id").innerHTML="Result : "+(n1/n2);
+        }
+    }
+}
+</script>
+</head>
+<body>
+<div style="text-align:center; margin-top:100px;">
+<h2>Simple Calculator</h2>
+Enter number1 :
+<input type="text" id="number1">
+<br><br>
+Enter number2 :
+<input type="text" id="number2">
+<br><br>
+<input type="button" value="+" onclick="add()">
+<input type="button" value="-" onclick="sub()">
+<input type="button" value="*" onclick="mul()">
+<input type="button" value="/" onclick="div()">
+<br><br>
+<h3 id="res_id">Result</h3>
+</div>
+</body>
+</html>
